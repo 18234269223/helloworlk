@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="goods:${goodsList}">
+    <a th:href="@{|/showGoodsInfo/${goods.id}|}">
+        <span>
+            <img th:src="@{|/${goods.imageurl}|}">
+        </span><br>
+        <span th:text="${goods.namedesc}"></span><br>
+        <span>[[${goods.name}]]&nbsp;&nbsp;&nbsp;&nbsp;[[${goods.price}]]</span>
+    </a>
+</div>
+</body>
+</html>

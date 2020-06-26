@@ -40,11 +40,22 @@
             </exclusions>
         </dependency>
 
-        <!--热部署插件-->
+        <!--Spring Boot集成Dubbo的起步依赖-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
+            <groupId>com.alibaba.spring.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!--ZooKeeper注册中心依赖-->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.personage.seckill</groupId>
+            <artifactId>seckill-interface</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
@@ -56,6 +67,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
