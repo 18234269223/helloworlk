@@ -79,9 +79,10 @@ var secKillObj={
                             return false
                         }
                         secKillObj.fun.secKill(goodsId,data.result);
+                        //alert(data.result);
                    },
                    error:function(){
-                       alert("对不起！网络异常请求稍后再试！111111111")
+                       alert("对不起！网络异常请求稍后再试！")
                    }
                })
            })
