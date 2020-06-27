@@ -37,4 +37,5 @@ public class GoodsController {
         model.addAttribute("goods", goods);
         return "goodsInfo";
     }
+
 }
